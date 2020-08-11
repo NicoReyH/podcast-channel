@@ -1,0 +1,48 @@
+main {
+  transform: skewY(-4.5deg);
+  background: linear-gradient(225deg, $blue, $dark-blue);
+
+  .episodes {
+    transform: skewY(4.5deg);
+    h2 {
+      color: #fff;
+      text-align: left;
+      padding: 3rem 0 1.5rem 0;
+    }
+
+    iframe {
+      margin-bottom: 5px;
+    }
+
+    iframe:last-of-type {
+      margin-bottom: 8rem;
+    }
+  }
+}
+
+@media only screen and (min-width: $min-desktop) {
+  main {
+    .episodes {
+      h2 {
+        font-size: $fz-desktop-title;
+        padding-top: 7rem;
+      }
+
+      .iframes {
+        display: grid;
+        column-gap: 72px;
+        row-gap: 72px;
+
+        .episode-one,
+        .episode-three {
+          grid-column: 1 / 2;
+        }
+
+        .episode-two,
+        .episode-four {
+          grid-column: 2 / 3;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.pictures-section {
+  margin-bottom: 3rem;
+  h2 {
+    margin-bottom: 1rem;
+  }
+}
+
+.pictures {
+  display: flex;
+  flex-flow: row wrap;
+  img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,24 @@
+.topics-section {
+  h2 {
+    margin-bottom: 3rem;
+  }
+}
+
+.topics {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+
+  .topic {
+    margin-bottom: 5rem;
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    h3 {
+      font-family: $plex-sans;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: $text-color;
+    }
+  }
+}

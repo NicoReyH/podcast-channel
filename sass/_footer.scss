@@ -1,0 +1,12 @@
+footer {
+  text-align: center;
+  padding-bottom: 2rem;
+  p {
+    margin-bottom: 1.5rem;
+  }
+  .social-media {
+    display: flex;
+    justify-content: space-evenly;
+    flex-basis: 100%;
+  }
+}
