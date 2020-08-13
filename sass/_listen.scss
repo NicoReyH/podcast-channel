@@ -1,6 +1,7 @@
 .listen-section {
   background: linear-gradient(225deg, $blue, $dark-blue);
-  padding: 3rem 0;
+  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+  padding: 5rem 0 3.5rem 0;
   margin-bottom: 1.5rem;
   p {
     color: #fff;
@@ -11,7 +12,8 @@
 
 @media only screen and (min-width: $min-desktop) {
   .listen-section {
-    padding: 8rem 0;
+    padding: 11rem 0 7rem 0;
+    clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
     p {
       font-size: $fz-desktop-title;
     }

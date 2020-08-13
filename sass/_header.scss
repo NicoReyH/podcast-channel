@@ -111,19 +111,21 @@ header {
 
       .menu {
         display: flex;
-        a {
-          color: $text-color;
+        li {
           margin-right: 3rem;
-          transition: all 0.3s ease;
           &:last-child {
             margin-right: 0;
           }
-          &:hover {
-            color: $green;
-            text-decoration: line-through;
-          }
-          &:active {
-            color: $text-active;
+          a {
+            color: $text-color;
+            transition: all 0.3s ease;
+            &:hover {
+              color: $green;
+              text-decoration: line-through;
+            }
+            &:active {
+              color: $text-active;
+            }
           }
         }
       }

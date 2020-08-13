@@ -25,28 +25,18 @@
       <header>
         <nav class="nav-bar">
           <img src="./img/logo.svg" alt="Logo" class="logo" />
-          <input type="checkbox" name="" id="nav-toggle" />
+          <input type="checkbox" name="checkbox" id="nav-toggle" />
           <label for="nav-toggle">
             <i class="fas fa-bars show-menu-btn"></i>
             <i class="fas fa-times hide-menu-btn"></i>
           </label>
-
           <ul class="menu">
-            <a href="#episodes">
-              <li>Episodios</li>
-            </a>
-            <a href="#about">
-              <li>Nosotros</li>
-            </a>
-            <a href="#guest">
-              <li>Entrevistas</li>
-            </a>
-            <a href="#topics">
-              <li>Tópicos</li>
-            </a>
+            <li><a href="#episodes">Episodios</a></li>
+            <li><a href="#about">Nosotros</a></li>
+            <li><a href="#guest">Entrevistas</a></li>
+            <li><a href="#topics">Tópicos</a></li>
           </ul>
         </nav>
-
         <div class="ml-desk">
           <h1 class="title">
             Hello <span class="line-thr">world</span> pale blue dot<span
@@ -58,7 +48,6 @@
             Un podcast que explora el mundo de la programación. Nuevos
             episodios, todos los jueves cada 15 días.
           </p>
-
           <a class="btn">Conoce más</a>
         </div>
       </header>
@@ -70,55 +59,37 @@
         <div class="iframes">
           <iframe
             src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt"
-            width="100%"
-            height="232"
-            frameborder="0"
-            allowtransparency="true"
             allow="encrypted-media"
             class="episode-one"
           ></iframe>
           <iframe
             src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby"
-            width="100%"
-            height="232"
-            frameborder="0"
-            allowtransparency="true"
             allow="encrypted-media"
             class="episode-two"
           ></iframe>
           <iframe
             src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD"
-            width="100%"
-            height="232"
-            frameborder="0"
-            allowtransparency="true"
             allow="encrypted-media"
             class="episode-three"
           ></iframe>
           <iframe
             src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn"
-            width="100%"
-            height="232"
-            frameborder="0"
-            allowtransparency="true"
             allow="encrypted-media"
             class="episode-four"
           ></iframe>
         </div>
       </div>
     </main>
-
     <!-- DIV TO APPLY FLEX ON DESKTOP -->
     <div class="phone-about">
       <!-- PHONE SECTION -->
-      <section class="phone-section">
+      <div class="phone-section">
         <img src="./img/phone.png" alt="Phone image" />
-      </section>
-
+      </div>
       <!-- ABOUT SECTION -->
-      <section class="container about-section" id="about">
-        <h2 class="title">De dónde venimos</h2>
+      <div class="container about-section" id="about">
         <article>
+          <h2 class="title">De dónde venimos</h2>
           <p class="text">
             Our posturings, our imagined self-importance, the delusion that we
             have some privileged position in the Universe, are challenged by
@@ -130,9 +101,8 @@
             come from elsewhere to save us from ourselves.
           </p>
         </article>
-      </section>
+      </div>
     </div>
-
     <!-- PICTURES SECTION -->
     <section class="pictures-section" id="guest">
       <h2 class="title container ml-desk">Invitadas/os estelares</h2>
@@ -141,17 +111,16 @@
         <img src="./img/Katie-Bouman.png" alt="Katie Bouman" />
         <img src="./img/Margaret_Hamilton.png" alt="Margaret Hamilton" />
         <img
-          src="./img/An E.R.A.Univac 1103 computer in the 1950s.png"
+          src="./img/computer_in_the_1950s.png"
           alt="Computer in the 1950s"
         />
         <img
-          src="./img/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png"
+          src="./img/Computer_operators.png"
           alt="Computer operators with an Eniac"
         />
         <img src="./img/susan-kare.png" alt="Susan Kare" />
       </div>
     </section>
-
     <!-- TOPICS SECTION -->
     <section class="container topics-section" id="topics">
       <h2 class="title">Algunos de nuestros temas</h2>
@@ -174,15 +143,13 @@
         </div>
       </div>
     </section>
-
     <!-- LISTEN SECTION -->
-    <section class="listen-section">
+    <div class="listen-section">
       <div class="container">
         <p class="title">¿Quieres las últimas novedades?</p>
         <a class="btn">Escucha los episodios</a>
       </div>
-    </section>
-
+    </div>
     <!-- FOOTER -->
     <footer class="container">
       <p class="text">© 2020— Hello blue pale dot</p>
