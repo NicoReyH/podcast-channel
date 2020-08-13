@@ -22,3 +22,22 @@
     }
   }
 }
+
+@media only screen and (min-width: $min-desktop) {
+  .topics-section {
+    h2 {
+      font-size: $fz-desktop-title;
+      margin-bottom: 4rem;
+    }
+
+    .topics {
+      flex-flow: row nowrap;
+      justify-content: space-evenly;
+      .topic {
+        img {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}

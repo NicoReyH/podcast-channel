@@ -12,3 +12,17 @@
     width: 100%;
   }
 }
+
+@media only screen and (min-width: $min-desktop) {
+  .pictures-section {
+    h2 {
+      font-size: $fz-desktop-title;
+      margin-bottom: 2rem;
+    }
+    .pictures {
+      img {
+        width: 33.3%;
+      }
+    }
+  }
+}

@@ -7,3 +7,14 @@
     width: 100%;
   }
 }
+
+@media only screen and (min-width: $min-desktop) {
+  .phone-section {
+    display: inline-block;
+    left: 15%;
+    flex-basis: 40%;
+    img {
+      width: 60%;
+    }
+  }
+}

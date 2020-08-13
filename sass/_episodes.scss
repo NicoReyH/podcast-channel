@@ -26,12 +26,14 @@ main {
       h2 {
         font-size: $fz-desktop-title;
         padding-top: 7rem;
+        margin-bottom: 0.3em;
       }
 
       .iframes {
         display: grid;
         column-gap: 72px;
         row-gap: 72px;
+        margin-bottom: 1em;
 
         .episode-one,
         .episode-three {

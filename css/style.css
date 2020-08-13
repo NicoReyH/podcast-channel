@@ -226,6 +226,7 @@ main .episodes iframe:last-of-type {
   main .episodes h2 {
     font-size: 48px;
     padding-top: 7rem;
+    margin-bottom: 0.3em;
   }
   main .episodes .iframes {
     display: -ms-grid;
@@ -233,6 +234,7 @@ main .episodes iframe:last-of-type {
     -webkit-column-gap: 72px;
             column-gap: 72px;
     row-gap: 72px;
+    margin-bottom: 1em;
   }
   main .episodes .iframes .episode-one,
   main .episodes .iframes .episode-three {
@@ -259,13 +261,54 @@ main .episodes iframe:last-of-type {
   width: 100%;
 }
 
-.article-section {
-  margin-top: -63px;
-  margin-bottom: 4rem;
+@media only screen and (min-width: 768px) {
+  .phone-section {
+    display: inline-block;
+    left: 15%;
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+  }
+  .phone-section img {
+    width: 60%;
+  }
 }
 
-.article-section h2 {
+.about-section {
+  margin-top: -63px;
+  margin-bottom: 3rem;
+}
+
+.about-section h2 {
   margin-bottom: 0.5rem;
+}
+
+.about-section p:first-child {
+  margin-bottom: 0.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .about-section {
+    display: inline-block;
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+    position: relative;
+    left: -10%;
+  }
+  .about-section h2 {
+    font-size: 48px;
+    margin-bottom: 0.5em;
+  }
+  .about-section p {
+    font-size: 16px;
+  }
+  .phone-about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .pictures-section {
@@ -288,6 +331,16 @@ main .episodes iframe:last-of-type {
 
 .pictures img {
   width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .pictures-section h2 {
+    font-size: 48px;
+    margin-bottom: 2rem;
+  }
+  .pictures-section .pictures img {
+    width: 33.3%;
+  }
 }
 
 .topics-section h2 {
@@ -326,6 +379,25 @@ main .episodes iframe:last-of-type {
   color: #060a24;
 }
 
+@media only screen and (min-width: 768px) {
+  .topics-section h2 {
+    font-size: 48px;
+    margin-bottom: 4rem;
+  }
+  .topics-section .topics {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .topics-section .topics .topic img {
+    margin-bottom: 1rem;
+  }
+}
+
 .listen-section {
   background: linear-gradient(225deg, #0000ec, #0000a3);
   padding: 3rem 0;
@@ -336,6 +408,19 @@ main .episodes iframe:last-of-type {
   color: #fff;
   text-align: center;
   margin-bottom: 2.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .listen-section {
+    padding: 8rem 0;
+  }
+  .listen-section p {
+    font-size: 48px;
+  }
+  .listen-section .btn {
+    width: 25%;
+    margin: 0 auto;
+  }
 }
 
 footer {
@@ -356,4 +441,32 @@ footer .social-media {
           justify-content: space-evenly;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+}
+
+footer .social-media a {
+  color: #060a24;
+}
+
+@media only screen and (min-width: 768px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer p {
+    margin-bottom: 0;
+  }
+  footer .social-media {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+  }
+  footer .social-media a {
+    font-size: 18px;
+  }
 }
