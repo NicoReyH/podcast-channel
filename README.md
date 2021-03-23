@@ -1,2 +1,2 @@
 # podcast-channel
-First project in Acamica Full Stack Developer course
+A project for a website focused on podcasts about software/web development.
