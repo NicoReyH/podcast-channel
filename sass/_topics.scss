@@ -4,21 +4,23 @@
   }
 }
 
-.topics {
+.topics,
+.topic {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
 
   .topic {
     margin-bottom: 5rem;
-    display: flex;
-    flex-flow: column nowrap;
     text-align: center;
     h3 {
       font-family: $plex-sans;
       font-size: 1.5rem;
       font-weight: 600;
       color: $text-color;
+    }
+    img {
+      width: 168px;
     }
   }
 }
